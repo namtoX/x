@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Othman EL ISSAOUI">
+<meta name="dcterms.date" content="2025-05-05">
+
+<title>Résumé des Eurocodes&nbsp;0 et&nbsp;1 pour ouvrages d’art</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="EC_files/libs/clipboard/clipboard.min.js"></script>
+<script src="EC_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="EC_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="EC_files/libs/quarto-html/popper.min.js"></script>
+<script src="EC_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="EC_files/libs/quarto-html/anchor.min.js"></script>
+<link href="EC_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="EC_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="EC_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="EC_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="EC_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul class="collapse">
+  <li><a href="#principe-de-lec-et-des-normes-antérieures" id="toc-principe-de-lec-et-des-normes-antérieures" class="nav-link active" data-scroll-target="#principe-de-lec-et-des-normes-antérieures"><span class="header-section-number">1</span> Principe de l’EC et des normes antérieures</a></li>
+  <li><a href="#contexte-et-objectif" id="toc-contexte-et-objectif" class="nav-link" data-scroll-target="#contexte-et-objectif"><span class="header-section-number">2</span> Contexte et objectif</a>
+  <ul class="collapse">
+  <li><a href="#hypothèses-générales-ec0" id="toc-hypothèses-générales-ec0" class="nav-link" data-scroll-target="#hypothèses-générales-ec0"><span class="header-section-number">2.1</span> 1. Hypothèses générales (EC0)</a></li>
+  <li><a href="#actions-et-charges-ec1" id="toc-actions-et-charges-ec1" class="nav-link" data-scroll-target="#actions-et-charges-ec1"><span class="header-section-number">2.2</span> 2. Actions et charges (EC1)</a></li>
+  <li><a href="#charges-dexploitation-sur-les-remblais" id="toc-charges-dexploitation-sur-les-remblais" class="nav-link" data-scroll-target="#charges-dexploitation-sur-les-remblais"><span class="header-section-number">2.3</span> Charges d’exploitation sur les remblais</a></li>
+  <li><a href="#combinaisons-dactions-1" id="toc-combinaisons-dactions-1" class="nav-link" data-scroll-target="#combinaisons-dactions-1"><span class="header-section-number">2.4</span> Combinaisons d’actions</a></li>
+  <li><a href="#comparaison-avec-les-normes-antérieures" id="toc-comparaison-avec-les-normes-antérieures" class="nav-link" data-scroll-target="#comparaison-avec-les-normes-antérieures"><span class="header-section-number">2.5</span> 4. Comparaison avec les normes antérieures</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Résumé des Eurocodes&nbsp;0 et&nbsp;1 pour ouvrages d’art</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-contents">
+             <p>Othman EL ISSAOUI </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">05/05/2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="principe-de-lec-et-des-normes-antérieures" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Principe de l’EC et des normes antérieures</h1>
+<p>Les Eurocodes reposent sur une <strong>approche semi‑probabiliste</strong> des vérifications en génie civil&nbsp;: les actions (charges) sont décrites par des valeurs statistiques caractéristiques (probabilité de non‑dépassement définie selon une période de retour) et les résistances par des valeurs réduites par des facteurs partiels de sécurité. Cette méthode concilie <strong>sécurité</strong> et <strong>optimisation économique</strong>, en prenant en compte les incertitudes sur les actions (variabilité des charges) et les résistances (variations matériaux).</p>
+<p>Contrairement aux normes antérieures comme le Fascicule&nbsp;61, qui utilisaient une <strong>méthode déterministe</strong> aux contraintes admissibles avec des charges fixes et un coefficient global unique, les Eurocodes proposent&nbsp;:</p>
+<ul>
+<li>Des <strong>valeurs caractéristiques</strong> liées à une période de retour (ex. trafic routier&nbsp;: 1000 ans, neige/vent&nbsp;: 50 ans).<br>
+</li>
+<li>Des <strong>facteurs partiels</strong> (γ pour charges et matériaux, ψ pour combinaisons) adaptés à chaque type d’action.<br>
+</li>
+<li>Des <strong>combinaisons d’états limites</strong> (ELU / ELS) pour vérifier la sécurité ultime et le confort d’usage.</li>
+</ul>
+</section>
+<section id="contexte-et-objectif" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Contexte et objectif</h1>
+<p>Ce document présente une <strong>revue bibliographique détaillée</strong> des Eurocodes&nbsp;EC0 et&nbsp;EC1 appliqués aux ouvrages d’art (ponts, passerelles, tunnels), avec un comparatif synthétique des règles antérieures (F61).</p>
+<section id="hypothèses-générales-ec0" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="hypothèses-générales-ec0"><span class="header-section-number">2.1</span> 1. Hypothèses générales (EC0)</h2>
+<section id="valeurs-caractéristiques-des-actions" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="valeurs-caractéristiques-des-actions"><span class="header-section-number">2.1.1</span> 1.1 Valeurs caractéristiques des actions</h3>
+<ul>
+<li><strong>Définition</strong>&nbsp;: valeur X<sub>k</sub> telle que la probabilité de dépassement sur la durée de référence R ne dépasse pas p<sub>R</sub> (ex. p<sub>R</sub>&nbsp;=&nbsp;2 %/an pour la neige) [EC0&nbsp;§2.4].<br>
+</li>
+<li><strong>Durées de référence</strong>&nbsp;: permanentes&nbsp;R&nbsp;=&nbsp;1 an; neige/vent&nbsp;R&nbsp;=&nbsp;50 ans; accidentelles&nbsp;R selon scénario.</li>
+</ul>
+</section>
+<section id="facteurs-partiels-de-sécurité" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="facteurs-partiels-de-sécurité"><span class="header-section-number">2.1.2</span> Facteurs partiels de sécurité</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type d’action</th>
+<th>Symbole</th>
+<th>γ_F (ELU)</th>
+<th>γ_F (ELS)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Permanente</td>
+<td>γ_G</td>
+<td>1,35</td>
+<td>1,00</td>
+</tr>
+<tr class="even">
+<td>Variable</td>
+<td>γ_Q</td>
+<td>1,50/1,35</td>
+<td>1,00</td>
+</tr>
+<tr class="odd">
+<td>Matériaux (béton)</td>
+<td>γ_M</td>
+<td>1,25</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><em>Majorations actions (ELU) et minorations résistances.</em></p>
+</section>
+<section id="combinaisons-dactions" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="combinaisons-dactions"><span class="header-section-number">2.1.3</span> Combinaisons d’actions</h3>
+<ul>
+<li><strong>ELU</strong>&nbsp;: E_d = Σ γ_F,i · F_k,i ≤ R_d = R_k / γ_M<br>
+</li>
+<li><strong>ELS</strong>&nbsp;: E_d = Σ F_k ≤ C_d<br>
+</li>
+<li><strong>Facteurs de combinaison</strong> (ψ_0, ψ_1, ψ_2) pour actions d’accompagnement.</li>
+</ul>
+</section>
+<section id="domaine-dapplication" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="domaine-dapplication"><span class="header-section-number">2.1.4</span> Domaine d’application</h3>
+<p>Les modèles de charges LM sont valables pour des portées jusqu’à 200 m. (lignes d’influences)</p>
+</section>
+<section id="découpage-de-la-chaussée-en-voies" class="level3" data-number="2.1.5">
+<h3 data-number="2.1.5" class="anchored" data-anchor-id="découpage-de-la-chaussée-en-voies"><span class="header-section-number">2.1.5</span> Découpage de la chaussée en voies</h3>
+<p>Il convient de mesuer la largeur w de la chaussée entre bordures (en excluant la distance entre les dispositifs de retenue fixe ou la terre-plein central, l’annexe nationale recommende une hauteur minimal de 10 cm pour les bordures) <img src="images/Voie_conventionnelles.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="Nombre et largeur de voies conventionnelles"> il faut également déterminer l’emplacement des voies et les numéroter suivants les règles (4.2.4). Lorsque la chaussée consiste en deux parties séparées sur deux tabliers indépandantes, il convient d’adopter une numérotation distincte, dans le cas ou les deux tabliers sont portés par les même piles, il convient d’adopter une numérotation unique.</p>
+<p><strong>Exemple</strong> : <img src="images/ex_num%C3%A9rotation_des_voies_conv.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="Diffusion des charges concentrées à travers"></p>
+</section>
+</section>
+<section id="actions-et-charges-ec1" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="actions-et-charges-ec1"><span class="header-section-number">2.2</span> 2. Actions et charges (EC1)</h2>
+<p>Il convient de considérer que la diffusion des charges à travers le revêtement et la dalle eb béton s’effectue à 45° jusqu’au nuveau du plan moyen de la dalle comme le montre le figure ci dessous :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\Diffusion_charges.png" class="img-fluid figure-img"></p>
+<figcaption>Diffusion des charges concentrées</figcaption>
+</figure>
+</div>
+<section id="charges-permanentes-g" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="charges-permanentes-g"><span class="header-section-number">2.2.1</span> Charges permanentes (G)</h3>
+<ul>
+<li>Toutes les charges qui ne varient ou varient peu dans le temps (Poids propre, poussée des terres, poussée d’eau…).</li>
+</ul>
+</section>
+<section id="charges-dexploitation-q" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="charges-dexploitation-q"><span class="header-section-number">2.2.2</span> Charges d’exploitation (Q)</h3>
+<p>Les valeurs caractéristiques sont destinées à la détermination des effets du trafic dans le cadre des vérifications vis-à-vis de l’ELU ainsi que de certaines vérifications spécifiques à l’ELS. L’Eurocode propose quatre modèles pour les effets du trafic:</p>
+<ul>
+<li><strong>LM1 – Trafic routier normal</strong>
+<ul>
+<li><p>Charge uniforme UDL (Uniform Dead Load), cette charge ne doit être postionnée que sur les parties défavorables de la surface d’influence.</p></li>
+<li><p>Charge concentré (Tandem TS), au contraire de la charge UDL, le tandem TS doit être placé en entier sur l’ouvrage, et donc certaines roues du tandem peuvent être placées sur des parties favorables si l’effet global du tandem reste défavorable.</p></li>
+<li><p>Le modèle LM1 inclut un coefficient dynamique, mais ce ne veut pas dire qu’on peut éviter une analyse dynamique.</p></li>
+<li><p>Pour les vérifications globales, les tandems peuvent être centrés dans leurs voies. Pour des vérifications locales, il faut les placés de tel sorte qu’il génère l’effet le plus défavorable, et donc de façon excentrée.</p></li>
+</ul>
+Ci dessous des exemples de positions de charges du LM1 pour un calcul de fléxion général et local.</li>
+</ul>
+<p><img src="images/positions_modele_lm1.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="L”gende"> <img src="images/positions_modele_lm1_effet_local.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="légende"> <img src="images/positions_modele_lm1_effet_local2.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="légende"> - <strong>Valeurs numériques</strong> :</p>
+<p>a- Des charges concentrées à double essieu (Tandem : Ts), chaque essieu ayant pour poids : <span class="math inline">\(a_{Q} Q_{k}\)</span></p>
+<p>Oû <span class="math inline">\(a_{Q}\)</span> est un coefficient d’ajustement.</p>
+<ul>
+<li><p>Il convient de considérer au plus un tandem complet par voie conventionnelle.</p></li>
+<li><p>Il convient d’adopter comme surface de contact de chacune des roues un caré de 0.4m.</p></li>
+<li><p>Il convient de consiérer chaque essieu du tandem comme possédant deux roues identiques : <span class="math inline">\(0.5a_{Q} Q_{k}\)</span></p></li>
+</ul>
+<p>b- Des charges uniformément réparties (système UDL) avec une charge au mètre carré de voie conventionnelle égale à : <span class="math inline">\(a_{q} q_{k}\)</span></p>
+<p>Oû <span class="math inline">\(a_{q}\)</span> est un coefficient d’ajustement. Les coefficients d’ajustement sont fournis dans l’Annexe nationale. Ils peuvent correspondre à un trafic pour lequel une part importante est constituée de poids lourds. Dans ce cas, il est recommendé de prendre un coefficient égal à 1. Pour des compositions de trafic plus courantes, une réduction modérée (de 10 % à 20 %) peut être appliquée, ce qui donne une valeur minimale de 0,8.</p>
+<p>On résume tous les valeurs numériques sur ce tableau : <img src="images\Intensité_des_charges_LM1.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="Légende"> <img src="images\chargestrafic.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="Légende"></p>
+<ul>
+<li><p><strong>LM2</strong></p>
+<ul>
+<li>Le modèle de charge LM2 (composé d’un essieu unique), a été développé en complément du LM1 afin de couvrir les effets du trafic sur des courtes lignes d’influence.</li>
+<li>L’annexe Nationnale recommande la valeur 320 kN (0.8 x 400), et ce quelle que soit la classe du trafic.</li>
+<li>Contrairement à LM1, il est possible de ne placer q’une roue sur les deux si cela est plus défavorable.</li>
+<li>Le modèle LM2 ne devrait être dimensionnant que dans le cas de surfaces d’influence courtes.</li>
+<li>L’intensité de la charge de ce modèle doit être majorée par un coefficient en fonction de la distance au joint, ce qui donne une valeur maximale de LM2 de 416 kN à proximité immédiat des joints de chaussée.</li>
+</ul></li>
+<li><p><strong>Les charges de piétons et cycles sur les ponts <span class="math inline">\(q_{fk}\)</span></strong></p>
+<p>Les charges sr les trottoirs de ponts routiers ou les pistes cyclables sont modélisées par une charge répartie constante <span class="math inline">\(q_{fk}\)</span>, l’intensité de cette charge égale à :</p>
+<ul>
+<li><p><span class="math inline">\(5 kN/m^2\)</span> pour l’étude de la flexion locale (résistance de trottoirs et des encorbellements par exemple).</p></li>
+<li><p><span class="math inline">\(3 kN/m^2\)</span> lorsqu’il est combiné au trafic routier (Analyse globale).</p></li>
+<li><p>Cette charge n’a pas vocation à s’appliquer sur les passages de service à l’intérieur ou sous le pont.</p></li>
+<li><p>Cette charge est libre. Autrement elle est appliquée sur les parties défavorables de la surface d’influence</p></li>
+<li><p>Lorsqu’on utilise le modèle LM4, une charge répartie de <span class="math inline">\(5 kN/m^2\)</span> est appliquée sur tous le tablier, ce chargement est recommendé en milieu urbain.</p></li>
+<li><p><strong>Autres charges sur les trottoires</strong> Les trottoires doivent être également calculés sous l’effet des actions suivantes :</p></li>
+<li><p>Une charge concentrée <span class="math inline">\(Q_{fwk}\)</span> d’une intensite de 10kN agissant sur une surface carrée de 0.1 m de côté. (cette charge est à ne pas prendre en compte lorsqu’on considère un véhicule de service).</p></li>
+<li><p>Un véhicule de service <span class="math inline">\(Q_{serv}\)</span> qui doit être spécifié par le maître d’ouvrage.</p></li>
+<li><p>présence accidentelle d’un véhicules si les trottoirs ne sont pas suffisament protéges.</p></li>
+</ul></li>
+<li><p><strong>Forces horizontales</strong></p>
+<p>On peut résumer ces forces dans la force de frainage qui s’ajoute à d’autres charge de différentes catégories (ex: Dilatation thermique) :</p>
+<ul>
+<li>Une force de freinage, <span class="math inline">\(Q_{lk}\)</span>, s’exerçant longitudinalement au niveau de la chausée * finie, doit être prise en compte.</li>
+<li>Cette charge est limitée à 900 kN, qui est en fonction de la longeur du pont et des charges verticales qui lui sont appliqués.</li>
+<li>Il convient de considérer cette force comme suceptible d’être appliquée suivant l’axe de n’importe quelle voie, comme montré sur le figure ci dessous:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\Charges_horizontales.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Légende</figcaption>
+</figure>
+</div>
+<ul>
+<li>Si les effets de l’excentricité sont négligeables, cette force peut être considérée comme appliqué seulement suivant l’axe de la chaussée et uniformément répartie sur la longueur chargée.</li>
+<li>Ce qu’on fait vraiment dans la vraie vie est le suivant :</li>
+</ul>
+<p>On prend que les charges verticales, ceci dit que on considére le tablier posé sur des appuis supposés parfaits, après, on lui applique les charges horizontales, et on prend les résultantes de forces et les autres efforts pour démensionner les appareils d’appuis ainsi que les piles, et éventuellement les fondations. Généralement, on prend la charge verticale globale du pont, on la traduit en une charge horizontale à travers la formule décrite dans la norme, et on la répartie uniformément sur la largeur du pont.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\Charges_horizontales_effets.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Charges horizontales</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Force centrifuges</strong></li>
+</ul></li>
+<li><p><strong>LM3 – Convois exceptionnels</strong></p></li>
+<li><p><strong>FLM – Fatigue</strong><br>
+Fatigue&nbsp;: apparition et croissance de fissures sous sollicitations cycliques, rupture sous charges inférieures à la résistance statique.</p></li>
+</ul>
+</section>
+<section id="actions-climatiques" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="actions-climatiques"><span class="header-section-number">2.2.3</span> Actions climatiques</h3>
+<ul>
+<li>Neige<br>
+</li>
+<li>Vent</li>
+<li>Thermiques</li>
+</ul>
+</section>
+</section>
+<section id="charges-dexploitation-sur-les-remblais" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="charges-dexploitation-sur-les-remblais"><span class="header-section-number">2.3</span> Charges d’exploitation sur les remblais</h2>
+<section id="généralités" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="généralités"><span class="header-section-number">2.3.1</span> Généralités</h3>
+<ul>
+<li>L’EC a généralisé l’application des charges LM1 sur l’ouvrage aux charges sur les remblais.</li>
+<li>Il convient de ne prendre en compte que les valeurs caractéristiques de combinaison d’état limite</li>
+<li>Aucune charge de freinage n’a été prise en compte</li>
+<li>les intensités du modèle LM1 sont appliqués avec une réduction de 30%</li>
+<li>Dans un but de simplification, les charges de tandem peuvent être remplacées par une charge équivalente <span class="math inline">\(q_{eq}\)</span> uniformément répartiesur une surface rectangulaire dépandant de la diffusion des charges au travers du remblai</li>
+<li>En absence de toute autre règle, si le remblai est convenablement consolidé, la valeur recommandée de l’angle de diffusion par rapport à la verticale est de 30 degré, et dans ce cas on prend un rectangle de 3m de largeur et de 2.20m de longueur</li>
+<li><span class="math inline">\(l'angle\ de\ diffusion \ne l'angle\ de\ frottement\ du\ sol\)</span>, mais ils sont liées par la relation suivante (approxiamtion): <span class="math display">\[
+\alpha = \frac{\pi}{4} - \frac{\varphi}{2}
+\]</span></li>
+<li><span class="math inline">\(L(z) = L + 2.z.\tan(\varphi)\)</span></li>
+<li><span class="math inline">\(l(z) = l + z.\tan(\varphi)\)</span></li>
+</ul>
+<p>voir figure ci dessous : <img src="images\diffusion_des_charges_sur_le_remblai.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%" alt="Diffusion"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\comparaison.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-width="70%"></p>
+</figure>
+</div>
+</section>
+<section id="résumé-des-modalités-dapplication-des-charges-sur-remblai" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="résumé-des-modalités-dapplication-des-charges-sur-remblai"><span class="header-section-number">2.3.2</span> Résumé des modalités d’application des charges sur remblai</h3>
+<p>Ce document synthétise les principales règles pour appliquer les charges d’exploitation (LM1, etc.) sur le remblai adjoint aux ouvrages d’art.</p>
+<ul>
+<li><p>Dalles de transition longues</p>
+<ul>
+<li><strong>Condition</strong> : [ L &gt; H (30^) ] où :
+<ul>
+<li><em>H</em> = hauteur du piédroit</li>
+<li><em>L</em> = longueur de la dalle de transition</li>
+</ul></li>
+<li><strong>Conséquence</strong> : Les charges de trafic sont prises en compte par la dalle de transition. <strong>On n’applique pas de sollicitation directe</strong> sur le remblai.</li>
+</ul></li>
+<li><p>Culée classique non reliée au tablier</p>
+<ul>
+<li><strong>Approche</strong> : envisager trois configurations distinctes :
+<ol type="1">
+<li><strong>Tablier seul chargé</strong></li>
+<li><strong>Culée (remblai) seule chargée</strong></li>
+<li><strong>Tablier + culée chargés simultanément</strong> <strong>Objectif</strong> : identifier la configuration la plus pénalisante (flexion, appuis, poussée de terre).</li>
+</ol></li>
+</ul></li>
+<li><p>Ouvrages cadre/portique sans dalles de transition</p>
+<ul>
+<li><strong>Problématique</strong> : l’interaction sol‑structure est complexe et difficile à modéliser précisément.</li>
+<li><strong>Principe</strong> : charger les remblais <strong>symétriquement</strong> pour limiter le pessimisme du modèle (sans réaction latérale du remblai).</li>
+</ul></li>
+<li><p>Démarche d’enveloppe en 3 calculs</p></li>
+</ul>
+<p>Réaliser les trois calculs suivants et retenir la pire sollicitation :</p>
+<ol type="1">
+<li><strong>Tablier seul</strong> (ex. LM1 : tandems + UDL)</li>
+<li><strong>Remblai seul</strong> (charge équivalente moyenne diffusée)</li>
+<li><strong>Combinaison compatibilité</strong> : tablier chargé + charge moyenne sur remblai</li>
+</ol>
+<blockquote class="blockquote">
+<p>Cette méthode reste <strong>simple</strong>, <strong>conservatrice</strong> et <strong>praticable</strong> en bureau d’étude, tout en garantissant la prise en compte du pire scénario. ### Force de freinage sur le remblai Aucune force de freinage n’est à appliquer sur le remblai. Pour les gardes grèves de culées, il convient de prévoir une force horizontale correspondant à 60 % du poids <span class="math inline">\(α_{Q1} Q_{1}\)</span> de l’essieu du TS de la voie 1 du LM1 et agissant simultanément avec la charge verticale <span class="math inline">\(α_{Q1} Q_{1}\)</span> , en tenant compte de la poussée des terres due au remblai, sans aucune autre charge de trafic sur le remblai.</p>
+</blockquote>
+<p>voir figure ci dessous : <img src="images\Charges_horizontales_mur_greve.png" class="img-fluid quarto-figure quarto-figure-center" data-fig-width="70%"></p>
+</section>
+</section>
+<section id="combinaisons-dactions-1" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="combinaisons-dactions-1"><span class="header-section-number">2.4</span> Combinaisons d’actions</h2>
+<p>Les combinaisons de charges permettent de définir les cas de charge critiques auxquels une structure doit résister. Elles associent différentes actions (charges permanentes, trafic, climatiques, etc.) en appliquant des coefficients de sécurité partiels pour garantir la stabilité en toutes situations (ELU : États Limites Ultimes) et le respect des conditions d’usage (ELS : États Limites de Service). L’objectif est de simuler les scénarios les plus défavorables, en tenant compte de la probabilité que plusieurs charges agissent simultanément.</p>
+<section id="principe-général-combinaisons-dactions" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="principe-général-combinaisons-dactions"><span class="header-section-number">2.4.1</span> Principe général (Combinaisons d’actions)</h3>
+<ul>
+<li>On cherche à obtenir les valeurs de calcul Ed = Σ γG·Gk + Σ γQ·ψᵢ·Qk + γP·Pk pour chaque situation (durable, construction, accidentelle, fatigue).<br>
+</li>
+<li>γ = coefficients partiels (actions, résistances), ψ = coefficients de combinaison (ψ₀, ψ₁, ψ₂).</li>
+</ul>
+</section>
+<section id="valeurs-caractéristiques-coefficients-2.12.4" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="valeurs-caractéristiques-coefficients-2.12.4"><span class="header-section-number">2.4.2</span> Valeurs caractéristiques &amp; coefficients (§ 2.1–2.4)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Symbole</th>
+<th>γ (majorant)</th>
+<th>ψ₀ (comb.)</th>
+<th>ψ₁ (fréqu.)</th>
+<th>ψ₂ (quasi‑per.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Permanentes</td>
+<td>Gk, Pk</td>
+<td>1,35</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr class="even">
+<td>Vent</td>
+<td>Fwk</td>
+<td>1,50</td>
+<td>0,60</td>
+<td>0,20</td>
+<td>0,00</td>
+</tr>
+<tr class="odd">
+<td>Neige (&gt;1000 m)</td>
+<td>Qsnk</td>
+<td>1,50</td>
+<td>0,70</td>
+<td>0,50</td>
+<td>0,20</td>
+</tr>
+<tr class="even">
+<td>Neige (&lt;1000 m)</td>
+<td>Qsnk</td>
+<td>1,50</td>
+<td>0,50</td>
+<td>0,20</td>
+<td>0,00</td>
+</tr>
+<tr class="odd">
+<td>Température</td>
+<td>Tk</td>
+<td>1,50</td>
+<td>0,60</td>
+<td>0,60</td>
+<td>0,50</td>
+</tr>
+<tr class="even">
+<td>Tassements</td>
+<td>TA, TP</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>0–1,00</td>
+<td>0–1,00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="groupes-dactions-variables-dexploitation-ponts-routiers" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="groupes-dactions-variables-dexploitation-ponts-routiers"><span class="header-section-number">2.4.3</span> Groupes d’actions variables d’exploitation (ponts routiers)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 73%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Groupe</th>
+<th>Composition</th>
+<th>ψ₀, ψ₁, ψ₂</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>gr1a</strong></td>
+<td>LM1 (TS + UDL) + TROT <span class="math inline">\(q_{fk}\)</span> + RMB_LM1</td>
+<td>0,75 ;&nbsp;0,4 ;&nbsp;0,0</td>
+</tr>
+<tr class="even">
+<td><strong>gr1b</strong></td>
+<td>LM2 (essieu unique)</td>
+<td>0,00 ;&nbsp;0,75 ;&nbsp;0,00</td>
+</tr>
+<tr class="odd">
+<td><strong>gr2</strong></td>
+<td>FH = <span class="math inline">\(Q_{lk}\)</span> (freinage) + <span class="math inline">\(Q_{tk}\)</span> (centrifuge) + LM1 fréquent</td>
+<td>0,00 ;&nbsp;0,00 ;&nbsp;0,00</td>
+</tr>
+<tr class="even">
+<td><strong>gr3</strong></td>
+<td>TROT(qfk) + QFWk (cric) + QSERV (véhicule de service)</td>
+<td>0,00 ;&nbsp;0,00 ;&nbsp;0,00</td>
+</tr>
+<tr class="odd">
+<td><strong>gr4</strong></td>
+<td>LM4 (charge de foule)</td>
+<td>0,00 ;&nbsp;0,00 ;&nbsp;0,00</td>
+</tr>
+<tr class="even">
+<td><strong>gr5</strong></td>
+<td>LM3 (véhicules spéciaux) ∪ LM1</td>
+<td>0,00 ;&nbsp;0,00 ;&nbsp;0,00</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="combinaisons-aux-els-service" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="combinaisons-aux-els-service"><span class="header-section-number">2.4.4</span> 4. Combinaisons aux ELS (service)</h3>
+<ul>
+<li><strong>Caractéristique</strong> (ψ₀ pour variables) :</li>
+</ul>
+</section>
+</section>
+<section id="comparaison-avec-les-normes-antérieures" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="comparaison-avec-les-normes-antérieures"><span class="header-section-number">2.5</span> 4. Comparaison avec les normes antérieures</h2>
+<section id="approche-semi-probabiliste-eurocode" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="approche-semi-probabiliste-eurocode"><span class="header-section-number">2.5.1</span> Approche semi-probabiliste (Eurocode)</h3>
+<ul>
+<li>États limites (ELU/ ELS).<br>
+</li>
+<li>Facteurs partiels γ_F, γ_M, ψ calibrés statistiquement pour avoir un niveau de sécurité.</li>
+</ul>
+</section>
+<section id="approche-déterministe-fascicule-61" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="approche-déterministe-fascicule-61"><span class="header-section-number">2.5.2</span> Approche déterministe (Fascicule&nbsp;61)</h3>
+<ul>
+<li>Contraintes admissibles (σ_adm = f_ck / γ unique).<br>
+</li>
+<li>Charges :</li>
+</ul>
+</section>
+<section id="différences-clés" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="différences-clés"><span class="header-section-number">2.5.3</span> Différences clés</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 41%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Eurocode</th>
+<th>Fascicule&nbsp;61</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sécurité</td>
+<td>Partiels, probabilistes</td>
+<td>Global, déterministe</td>
+</tr>
+<tr class="even">
+<td>Combinaisons</td>
+<td>Multiples, coefficients spécifiques</td>
+<td>——–</td>
+</tr>
+<tr class="odd">
+<td>Flexibilité</td>
+<td>Forte</td>
+<td>——</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="agressivité-et-calcul" class="level3" data-number="2.5.4">
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="agressivité-et-calcul"><span class="header-section-number">2.5.4</span> Agressivité et calcul</h3>
+<p><strong>Agressivité</strong>&nbsp;:</p>
+<p>LM1 classe&nbsp;2 produit en moyenne des effets plus forte par rapport au F61, ce qui engendre :</p>
+<ul>
+<li>Flexion accrue en rive (bipoutres).<br>
+</li>
+<li>Cisaillement/torsion en caissons.<br>
+</li>
+<li>Plus agressif sur ouvrages étroits, moins sur très larges, du fait de la faible intensité de UDL pour les voies autres que la voie 1.</li>
+</ul>
+<p><strong>Calcul</strong>&nbsp;:</p>
+<p>En terme de calcul, on peut noter les points suivants par rapport au fascicule 61 :</p>
+<ul>
+<li>L’amplification dynamique est incluse, ce qui simplifie les calculs.</li>
+<li>Positionnement des voies dépend surface d’influence, donc il est p%us complexe.</li>
+</ul>
+<p>dossier 104 modele moe (adp =&gt; fichier excel =&gt; guillaume m )</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copié");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copié");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
